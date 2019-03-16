@@ -29,7 +29,7 @@ export default props => (
     <style jsx>{`
       .container {
         color: grey;
-        background-color: #5cadff;
+        background-color:rgba(137,187,187,0.8);
         min-height: 100vh;
       }
     `}</style>

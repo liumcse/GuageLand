@@ -46,7 +46,7 @@ const PageHome = () => (
           margin-top: 4rem;
         }
         .logo-image {
-          width: 18rem;
+          width: 20rem;
         }
         .title-image {
           width: 20rem;
@@ -67,7 +67,7 @@ const PageHome = () => (
         }
       `}
     </style>
-  </div>
+  </div >
 );
 
 export default PageHome;

@@ -29,7 +29,7 @@ const Toolbar = props => (
       .container {
         width: 100%;
         height: 3.5rem;
-        background-color: white;
+        background-color:white;
         position: fixed;
         bottom: 0;
         display: flex;
