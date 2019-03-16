@@ -23,7 +23,9 @@ const config = {
     alias: {
       src: SRC_PATH,
       "@routes": SRC_PATH + "/routes",
-      "@components": SRC_PATH + "/components"
+      "@components": SRC_PATH + "/components",
+      "@utils": SRC_PATH + "/utils",
+      "@common": SRC_PATH + "/common"
     }
   },
   module: {

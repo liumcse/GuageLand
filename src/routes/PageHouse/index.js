@@ -1,5 +1,4 @@
 import React from "react";
-import * as styles from "./style.scss";
 
 const PageHouse = () => (
   <div className={styles.appContainer}>
