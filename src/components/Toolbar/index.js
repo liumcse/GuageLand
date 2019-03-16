@@ -10,7 +10,11 @@ const Toolbar = props => {
     <div className="container">
       <div className="small">
         <div className="icon-wrapper">
+<<<<<<< HEAD
           <Link to="/findings">
+=======
+          <Link to="/">
+>>>>>>> origin/master
             <FontAwesomeIcon icon="search" size="2x" />
           </Link>
         </div>
@@ -29,14 +33,14 @@ const Toolbar = props => {
       </div>
       <div className="small">
         <div className="icon-wrapper">
-        <Link to="/">
-          <FontAwesomeIcon icon="home" size="2x" />
-        </Link>
+          <Link to="/">
+            <FontAwesomeIcon icon="home" size="2x" />
+          </Link>
         </div>
         <div className="icon-wrapper">
-        <Link to="/">
-          <FontAwesomeIcon icon="cog" size="2x" />
-        </Link>
+          <Link to="/">
+            <FontAwesomeIcon icon="cog" size="2x" />
+          </Link>
         </div>
       </div>
       <style jsx>{`
