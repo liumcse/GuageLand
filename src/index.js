@@ -14,7 +14,7 @@ import PageProfile from "@routes/PageProfile";
 import PageFindings from "@routes/PageFindings";
 
 // PWA
-import * as serviceWorker from "./serviceWorker";
+import * as serviceWorker from "./public/serviceWorker";
 
 import "src/styles/normalize.css";
 import "react-image-gallery/styles/css/image-gallery.css";
