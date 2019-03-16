@@ -29,7 +29,7 @@ const Toolbar = props => {
       </div>
       <div className="small">
         <div className="icon-wrapper">
-          <Link to="/">
+          <Link to="/house">
             <FontAwesomeIcon icon="home" size="2x" />
           </Link>
         </div>

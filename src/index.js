@@ -56,6 +56,10 @@ const App = () => (
             margin-top: 1rem;
             margin-left: 1rem;
           }
+          .MuiFab-root-30.MuiFab-disabled-36, #reward-tag {
+            color: black;
+            background-color: rgba(255, 255, 255, 1);
+          }
         `}
       </style>
     </AppShell>

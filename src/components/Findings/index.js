@@ -4,7 +4,7 @@ import {images} from "@common/assets/images";
 
 const Findings = props => (
   <div>
-    <ImageGallery classsName="gallery"
+    <ImageGallery 
       items={images}
       showBullets
       showFullscreenButton={false}
@@ -14,13 +14,7 @@ const Findings = props => (
       autoPlay={false}
     />
     <style jsx>{`
-      .gallery {
-        height: 15rem;
-      }
-
-      .image-gallery {
-        height: 15rem;
-      }
+    
     `}</style>
   </div>
 );

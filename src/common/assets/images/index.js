@@ -6,10 +6,7 @@ import Image5 from "@common/assets/pic/image5.jpg";
 
 export const images = [
   {
-    original: Image1,
-    sizes: {
-      height: 15
-    }
+    original: Image1
   },
   {
     original: Image2
