@@ -6,6 +6,7 @@ import * as ROUTES from "@routes";
 
 // Import routes
 import PageHome from "@routes/PageHome";
+import PageDiscovery from "@routes/PageDiscovery";
 
 // Import global style
 import "src/styles/app.scss";
@@ -16,6 +17,7 @@ const App = () => (
     <Router>
       <Switch>
         <Route exact path={ROUTES.ROUTE_HOME} component={PageHome} />
+        <Route exact path={ROUTES.ROUTE_DISCOVERY} component={PageDiscovery} />
         {/* Add more routes here */}
       </Switch>
     </Router>
