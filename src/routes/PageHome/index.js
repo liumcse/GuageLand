@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoImage from "@common/assets/icons/logo.png";
+import logoIcon from "@common/assets/icons/logo.png";
 import Title from "@common/assets/icons/Guageland_title.png";
+import GoodImg from "@components/GoodImg";
 
 const PageHome = () => (
   <div className="container">
     <div className="logo">
-      <img className="logo-image" src={LogoImage} alt="Logo" />
+      <GoodImg src={logoIcon} width="10rem" />
     </div>
     <img className="title-image" src={Title} alt="title" />
     <Link
@@ -61,7 +62,7 @@ const PageHome = () => (
         }
       `}
     </style>
-  </div >
+  </div>
 );
 
 export default PageHome;

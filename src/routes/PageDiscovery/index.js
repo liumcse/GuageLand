@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const __load_globe = () => {
   // DO NOT TRY TO REFACTOR THIS FUNCTION
@@ -169,12 +170,14 @@ class PageDiscovery extends React.Component {
     return (
       <div className="container">
         <div className="globe">
-          <canvas
-            id="rotatingGlobe"
-            width="300"
-            height="300"
-            style={{ width: "300px", height: "300px", cursor: "move" }}
-          />
+          <Link to="language/laos-language">
+            <canvas
+              id="rotatingGlobe"
+              width="300"
+              height="300"
+              style={{ width: "300px", height: "300px", cursor: "move" }}
+            />
+          </Link>
         </div>
         <style jsx>{`
           .container {
