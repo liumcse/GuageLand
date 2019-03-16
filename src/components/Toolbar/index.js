@@ -1,20 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { withRouter } from "react-router";
 import botIcon from "@common/assets/icons/chatbot.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // eslint-disable-next-line no-unused-vars
+var Findings = ["/findings"];
+var Chat = ["/chat"];
+var House = ["/house"];
+var Profile = ["/profile"];
+
 const Toolbar = props => {
+  const {
+    location: { pathname }
+  } = props;
   return (
     <div className="container">
       <div className="small">
-        <div className="icon-wrapper">
+        <div id="findings" className="icon-wrapper">
           <Link to="/findings">
             <FontAwesomeIcon icon="search" size="2x" />
           </Link>
         </div>
-        <div className="icon-wrapper selected">
+      </div>
+      <div className="small">
+        <div id="chat" className="icon-wrapper">
           <Link to="/chat">
             <img className="icon-bot" src={botIcon} />
           </Link>
@@ -28,13 +38,15 @@ const Toolbar = props => {
         </div>
       </div>
       <div className="small">
-        <div className="icon-wrapper">
-          <Link to="/">
+        <div id="house" className="icon-wrapper">
+          <Link to="/house">
             <FontAwesomeIcon icon="home" size="2x" />
           </Link>
         </div>
-        <div className="icon-wrapper">
-          <Link to="/">
+      </div>
+      <div className="small">
+        <div id="profile" className="icon-wrapper ">
+          <Link to="/profile">
             <FontAwesomeIcon icon="cog" size="2x" />
           </Link>
         </div>
@@ -51,9 +63,8 @@ const Toolbar = props => {
           justify-content: space-around;
         }
         .small {
-          display: flex;
           justify-content: space-around;
-          width: 100%;
+          width: 50%;
           height: 100%;
           align-items: center;
         }
@@ -80,9 +91,21 @@ const Toolbar = props => {
         .selected {
           background-color: #9bb3e1;
         }
+        #findings{
+          background-color: ${Findings.includes(pathname) ? "#9bb3e1" : "white"};
+        }
+        #chat{
+          background-color: ${Chat.includes(pathname) ? "#9bb3e1" : "white"};
+        }
+        #profile{
+          background-color: ${Profile.includes(pathname) ? "#9bb3e1" : "white"};
+        }
+        #house{
+          background-color: ${House.includes(pathname) ? "#9bb3e1" : "white"};
+        }
       `}</style>
     </div>
   );
 };
 
-export default Toolbar;
+export default withRouter(Toolbar);
