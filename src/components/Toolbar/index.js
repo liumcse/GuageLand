@@ -22,7 +22,7 @@ const Toolbar = props => {
       </div>
       <div className="big">
         <div className="icon-wrapper">
-          <Link to="/">
+          <Link to="/discovery">
             <FontAwesomeIcon icon="globe-asia" size="3x" />
           </Link>
         </div>
