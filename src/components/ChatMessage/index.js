@@ -22,10 +22,7 @@ const Text = props => (
   <div
     className={`container speech-bubble${props.incoming ? "-incoming" : ""}`}
   >
-    Hello, World! Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-    ipsum, distinctio iusto libero magnam ullam fugit sit commodi deleniti
-    repellat culpa quidem laborum cumque harum est. Delectus alias consectetur
-    sit.
+    {props.msg}
     <style jsx>{`
       .container {
         background-color: white;
@@ -33,7 +30,7 @@ const Text = props => (
         border-radius: 0.4em;
         padding: 1rem;
         max-width: 60%;
-        margin-top: -0.5rem;
+        //margin-top: -0.5rem;
       }
 
       .speech-bubble {
@@ -81,7 +78,7 @@ const ChatMessage = props => {
   return (
     <div className="container">
       <Avatar />
-      <Text incoming={props.incoming} />
+      <Text incoming={props.incoming} msg={props.msg}/>
       <style jsx>{`
         .container {
           display: flex;

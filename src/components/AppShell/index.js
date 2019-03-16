@@ -1,5 +1,6 @@
 import React from "react";
 import Toolbar from "@components/Toolbar";
+import TopBar from "@components/TopBar";
 import { withRouter } from "react-router";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -13,7 +14,8 @@ import {
   faCog,
   faGlobeAsia,
   faMicrophone,
-  faPaperPlane
+  faPaperPlane,
+  faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -25,10 +27,12 @@ library.add(
   faCog,
   faGlobeAsia,
   faMicrophone,
-  faPaperPlane
+  faPaperPlane,
+  faChevronLeft
 );
 
 const NO_TOOLBAR_PATH = ["/chat"];
+const NO_TOPBAR_PATH = ["/"];
 
 export default withRouter(props => {
   const {
@@ -36,11 +40,17 @@ export default withRouter(props => {
   } = props;
   return (
     <div className="container">
+      <div className="topbar">
+        <TopBar />
+      </div>
       {props.children}
       <div className="toolbar">
         <Toolbar />
       </div>
       <style jsx>{`
+        .topbar {
+          display: ${NO_TOPBAR_PATH.includes(pathname) ? "none" : "block"};
+        }
         .container {
           color: grey;
           background-color: rgba(137, 187, 187, 0.8);
