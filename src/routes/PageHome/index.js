@@ -42,15 +42,15 @@ const PageHome = () => (
           padding: 1rem;
         }
         .logo {
-          border-radius: 10rem;
-          margin-top: 4rem;
+          border-radius: 8rem;
+          margin-top: 3rem;
         }
         .logo-image {
           width: 20rem;
         }
         .title-image {
           width: 20rem;
-          margin-top: 2rem;
+          margin-top: 2.5rem;
           position: absolute;
         }
         .btn {
@@ -58,7 +58,7 @@ const PageHome = () => (
           color: black;
           border: none;
           border-radius: 3px;
-          width: 10rem;
+          width: 9rem;
           padding: 1rem 0;
         }
         .login {
