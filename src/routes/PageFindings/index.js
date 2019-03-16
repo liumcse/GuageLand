@@ -103,6 +103,7 @@ const PageFindings = () => (
       {`
       .cards {
         display: flex-root;
+        padding-bottom: 5rem;
       }
       .card {
         width: 90%;
