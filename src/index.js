@@ -17,8 +17,8 @@ import "src/styles/normalize.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 const App = () => (
-  <AppShell>
-    <Router>
+  <Router>
+    <AppShell>
       <Switch>
         <Route exact path={ROUTES.ROUTE_HOME} component={PageHome} />
         <Route exact path={ROUTES.ROUTE_LOGIN} component={PageLogin} />
@@ -29,19 +29,25 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_FINDINGS} component={PageFindings} />
         {/* Add more routes here */}
       </Switch>
-    </Router>
-    <style jsx global>
-      {`
-        :root {
-          font-size: 16px;
-          color: black;
-        }
-        .image-gallery-slides {
+      <style jsx global>
+        {`
+          :root {
+            font-size: 16px;
+            color: black;
+            font-family: "Libre Baskerville", serif;
+          }
+          a {
+            text-decoration: none;
+            display: inline;
+            color: inherit;
+          }
+          .image-gallery-slides {
           height: 12rem;
         }
-      `}
-    </style>
-  </AppShell>
+        `}
+      </style>
+    </AppShell>
+  </Router>
 );
 
 ReactDOM.render(<App />, document.getElementById("app"));
