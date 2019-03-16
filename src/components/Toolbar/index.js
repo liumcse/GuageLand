@@ -17,7 +17,11 @@ const Toolbar = props => {
   return (
     <div className="container">
       <div className="small">
+<<<<<<< HEAD
         <div id="findings" className="icon-wrapper">
+=======
+        <div className="icon-wrapper">
+>>>>>>> origin/develop
           <Link to="/findings">
             <FontAwesomeIcon icon="search" size="2x" />
           </Link>
@@ -38,6 +42,7 @@ const Toolbar = props => {
         </div>
       </div>
       <div className="small">
+<<<<<<< HEAD
         <div id="house" className="icon-wrapper">
           <Link to="/house">
             <FontAwesomeIcon icon="home" size="2x" />
@@ -47,6 +52,15 @@ const Toolbar = props => {
       <div className="small">
         <div id="profile" className="icon-wrapper ">
           <Link to="/profile">
+=======
+        <div className="icon-wrapper">
+          <Link to="/">
+            <FontAwesomeIcon icon="home" size="2x" />
+          </Link>
+        </div>
+        <div className="icon-wrapper">
+          <Link to="/">
+>>>>>>> origin/develop
             <FontAwesomeIcon icon="cog" size="2x" />
           </Link>
         </div>
