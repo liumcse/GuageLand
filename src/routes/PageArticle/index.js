@@ -3,6 +3,9 @@ import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+import loveIcon from "@common/assets/icons/favorite.png";
+import shareIcon from "@common/assets/icons/paper_plane.png";
+import GoodImg from "@components/GoodImg";
 
 const PageArticle = () => (
   <div className="container">
@@ -40,8 +43,8 @@ const PageArticle = () => (
       </Card>
     </div>
     <div className="bottom-bar">
-      <div className="icon-wrapper">Love</div>
-      <div className="icon-wrapper">Share</div>
+      <GoodImg width="2rem" height="2rem" src={loveIcon} />
+      <GoodImg width="2rem" height="2rem" src={shareIcon} />
     </div>
     <style jsx>{`
       .container {
