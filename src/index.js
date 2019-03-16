@@ -16,8 +16,8 @@ import PageSearch from "@routes/PageSearch";
 import "src/styles/normalize.css";
 
 const App = () => (
-  <AppShell>
-    <Router>
+  <Router>
+    <AppShell>
       <Switch>
         <Route exact path={ROUTES.ROUTE_HOME} component={PageHome} />
         <Route exact path={ROUTES.ROUTE_LOGIN} component={PageLogin} />
@@ -28,16 +28,22 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_SEARCH} component={PageSearch} />
         {/* Add more routes here */}
       </Switch>
-    </Router>
-    <style jsx global>
-      {`
-        :root {
-          font-size: 16px;
-          color: black;
-        }
-      `}
-    </style>
-  </AppShell>
+      <style jsx global>
+        {`
+          :root {
+            font-size: 16px;
+            color: black;
+            font-family: "Libre Baskerville", serif;
+          }
+          a {
+            text-decoration: none;
+            display: inline;
+            color: inherit;
+          }
+        `}
+      </style>
+    </AppShell>
+  </Router>
 );
 
 ReactDOM.render(<App />, document.getElementById("app"));

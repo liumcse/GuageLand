@@ -12,9 +12,6 @@ const PageHome = () => (
     <Link
       to="/login"
       style={{
-        textDecoration: "none",
-        color: "inherit",
-        display: "inline",
         marginTop: "8rem"
       }}
     >
@@ -23,9 +20,6 @@ const PageHome = () => (
     <Link
       to="#"
       style={{
-        textDecoration: "none",
-        color: "inherit",
-        display: "inline",
         marginTop: "1rem"
       }}
     >
@@ -46,7 +40,7 @@ const PageHome = () => (
           margin-top: 4rem;
         }
         .logo-image {
-          width: 18rem;
+          width: 20rem;
         }
         .title-image {
           width: 20rem;
@@ -67,7 +61,7 @@ const PageHome = () => (
         }
       `}
     </style>
-  </div>
+  </div >
 );
 
 export default PageHome;
