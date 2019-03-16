@@ -15,7 +15,7 @@ import {
   faGlobeAsia,
   faMicrophone,
   faPaperPlane,
-  faCaretSquareLeft
+  faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -28,11 +28,11 @@ library.add(
   faGlobeAsia,
   faMicrophone,
   faPaperPlane,
-  faCaretSquareLeft
+  faChevronLeft
 );
 
 const NO_TOOLBAR_PATH = ["/chat"];
-const NO_TOPBAR_PATH = ["/home"];
+const NO_TOPBAR_PATH = ["/"];
 
 export default withRouter(props => {
   const {
@@ -48,7 +48,7 @@ export default withRouter(props => {
         <Toolbar />
       </div>
       <style jsx>{`
-        .topbar{
+        .topbar {
           display: ${NO_TOPBAR_PATH.includes(pathname) ? "none" : "block"};
         }
         .container {

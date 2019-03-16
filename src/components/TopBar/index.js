@@ -1,14 +1,18 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TopBar = props => {
+  const goBack = () => {
+    props.history.goBack();
+  };
   return (
     <div className="container">
       <div className="back-icon">
-        <Link to="/">
-          <FontAwesomeIcon icon="caret-square-left" size="2x" />
-        </Link>
+        <span onClick={goBack}>
+          <FontAwesomeIcon icon="chevron-left" size="2x" />
+        </span>
       </div>
       <style jsx>
         {`
@@ -28,12 +32,14 @@ const TopBar = props => {
             justify-content: space-around;
             width: 100%;
             height: 100%;
+            color: black;
+            padding: 0.5rem;
             align-items: left;
           }
         `}
       </style>
     </div>
-  )
-}
+  );
+};
 
-export default TopBar;
+export default withRouter(TopBar);
