@@ -34,6 +34,7 @@ const App = () => (
         :root {
           font-size: 16px;
           color: black;
+          font-family: 'Libre Baskerville', serif;
         }
       `}
     </style>
