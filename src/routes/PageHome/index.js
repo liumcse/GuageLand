@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoImage from "@common/assets/logo.png";
-import Title from "@common/assets/Guageland_title.png";
+import LogoImage from "@common/assets/icons/logo.png";
+import Title from "@common/assets/icons/Guageland_title.png";
 
 const PageHome = () => (
   <div className="container">

@@ -31,12 +31,11 @@ const App = () => (
         {/* Add more routes here */}
       </Switch>
     </Router>
-    {/* Global CSS */}
     <style jsx global>
       {`
         :root {
-          font-size: 18px;
-          font-family: ;
+          font-size: 16px;
+          color: black;
         }
       `}
     </style>
