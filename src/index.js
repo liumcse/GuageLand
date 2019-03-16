@@ -12,6 +12,7 @@ import PageDiscovery from "@routes/PageDiscovery";
 import PageHouse from "@routes/PageHouse";
 import PageProfile from "@routes/PageProfile";
 import PageFindings from "@routes/PageFindings";
+import PageArticle from "@routes/PageArticle";
 
 // PWA
 import * as serviceWorker from "./public/serviceWorker";
@@ -23,13 +24,14 @@ const App = () => (
   <Router>
     <AppShell>
       <Switch>
-        <Route exact path={ROUTES.ROUTE_HOME} component={PageHome} />
         <Route exact path={ROUTES.ROUTE_LOGIN} component={PageLogin} />
         <Route exact path={ROUTES.ROUTE_CHAT} component={PageChat} />
         <Route exact path={ROUTES.ROUTE_DISCOVERY} component={PageDiscovery} />
         <Route exact path={ROUTES.ROUTE_HOUSE} component={PageHouse} />
         <Route exact path={ROUTES.ROUTE_PROFILE} component={PageProfile} />
         <Route exact path={ROUTES.ROUTE_FINDINGS} component={PageFindings} />
+        <Route exact path={ROUTES.ROUTE_ARTICLE} component={PageArticle} />
+        <Route path={ROUTES.ROUTE_HOME} component={PageHome} />
         {/* Add more routes here */}
       </Switch>
       <style jsx global>
@@ -38,6 +40,7 @@ const App = () => (
             font-size: 16px;
             color: black;
             font-family: "Libre Baskerville", serif;
+            background-color: rgba(137, 187, 187, 0.8);
           }
           a {
             text-decoration: none;

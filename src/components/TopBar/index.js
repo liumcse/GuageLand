@@ -32,8 +32,8 @@ const TopBar = props => {
             justify-content: space-around;
             width: 100%;
             height: 100%;
-            color: black;
-            padding: 0.5rem;
+            color: white;
+            padding: 0.75rem;
             align-items: left;
           }
         `}
