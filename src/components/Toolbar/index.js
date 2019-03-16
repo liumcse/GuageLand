@@ -10,7 +10,11 @@ const Toolbar = props => {
     <div className="container">
       <div className="small">
         <div className="icon-wrapper">
+<<<<<<< HEAD
           <Link to="/findings">
+=======
+          <Link to="/">
+>>>>>>> origin/master
             <FontAwesomeIcon icon="search" size="2x" />
           </Link>
         </div>
