@@ -1,0 +1,55 @@
+{
+  "questions": [
+    {
+      "content": "What is the name of this contry?", 
+      "picture-path": "src/common/assets/laos.png",
+      "answers": {
+        "false1": "Cambodia",
+        "false2": "Vietanam",
+        "false3": "Thailand",
+        "true": "Laos"
+      }      
+    },
+    {
+      "content": "What is the capital city?", 
+      "picture-path": "src/common/assets/laos.png",
+      "answers": {
+        "false1": "Hanoi",
+        "false2": "Bangkok",
+        "false3": "Ho Chi Minh",
+        "true": "Vientiane"
+      }      
+    },
+    {
+      "content": "Which festival is from this contry?", 
+      "picture-path": "src/common/assets/laos.png",
+      "answers": {
+        "false1": "Hue Festival",
+        "false2": "Perfume Festival",
+        "false3": "Mid-Autumn Festival",
+        "true": "Boun Pa Vet"
+      }      
+    },
+    {
+      "content": "When is the national day?", 
+      "picture-path": "src/common/assets/laos.png",
+      "answers": {
+        "false1": "1 May",
+        "false2": "5 June",
+        "false3": "9 Nov",
+        "true": "2 Dec"
+      }      
+    },
+    {
+      "content": "Which dish is famous from this country?", 
+      "picture-path": "src/common/assets/laos.png",
+      "answers": {
+        "false1": "Beef Noodle",
+        "false2": "Chilli Crab",
+        "false3": "Fries",
+        "true": "Laap"
+      }      
+    }
+  ] 
+}
+
