@@ -27,9 +27,9 @@ const __load_globe = () => {
       topojson: {
         file: "http://planetaryjs.com/world-110m-withlakes.json"
       },
-      oceans: { fill: "#000080" },
-      land: { fill: "#339966" },
-      borders: { stroke: "#008000" }
+      oceans: { fill: "#00a4d1" },
+      land: { fill: "#eddc44" },
+      borders: { stroke: "#ffffff" }
     })
   );
   // Load our custom `lakes` plugin to draw lakes; see below.
@@ -159,13 +159,11 @@ const __load_globe = () => {
 
 class PageDiscovery extends React.Component {
   componentDidMount() {
-    console.log("Hi");
     try {
       __load_globe();
     } catch (e) {
       console.error("Globe loading error", e);
     }
-    console.log("Done execution");
   }
   render() {
     return (
