@@ -1,5 +1,4 @@
 import React from "react";
-import * as styles from "./style.scss";
 
 const PageDiscovery = () => (
   <div className={styles.appContainer}>
