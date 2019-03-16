@@ -6,6 +6,11 @@ import * as ROUTES from "@routes";
 
 // Import routes
 import PageHome from "@routes/PageHome";
+import PageAI from "@routes/PageAI";
+import PageDiscovery from "@routes/PageDiscovery";
+import PageHouse from "@routes/PageHouse";
+import PageProfile from "@routes/PageProfile";
+import PageSearch from "@routes/PageSearch";
 
 // Import global style
 import "src/styles/app.scss";
@@ -16,6 +21,11 @@ const App = () => (
     <Router>
       <Switch>
         <Route exact path={ROUTES.ROUTE_HOME} component={PageHome} />
+        <Route exact path={ROUTES.ROUTE_AI} component={PageAI} />
+        <Route exact path={ROUTES.ROUTE_DISCOVERY} component={PageDiscovery} />
+        <Route exact path={ROUTES.ROUTE_HOUSE} component={PageHouse} />
+        <Route exact path={ROUTES.ROUTE_PROFILE} component={PageProfile} />
+        <Route exact path={ROUTES.ROUTE_SEARCH} component={PageSearch} />
         {/* Add more routes here */}
       </Switch>
     </Router>
