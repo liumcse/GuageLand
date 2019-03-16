@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LogoImage from "@common/assets/icons/logo.png";
+import Title from "@common/assets/icons/Guageland_title.png";
 
 const PageHome = () => (
   <div className="container">
-    <div className="logo" />
+    <div className="logo">
+      <img className="logo-image" src={LogoImage} alt="Logo" />
+    </div>
+    <img className="title-image" src={Title} alt="title" />
     <Link
       to="/login"
       style={{
-        textDecoration: "none",
-        color: "inherit",
-        display: "inline",
-        marginTop: "5rem"
+        marginTop: "8rem"
       }}
     >
       <div className="btn login">LOGIN</div>
@@ -18,9 +20,6 @@ const PageHome = () => (
     <Link
       to="#"
       style={{
-        textDecoration: "none",
-        color: "inherit",
-        display: "inline",
         marginTop: "1rem"
       }}
     >
@@ -37,11 +36,16 @@ const PageHome = () => (
           padding: 1rem;
         }
         .logo {
-          background-color: red;
-          width: 10rem;
-          height: 10rem;
           border-radius: 10rem;
-          margin-top: 20%;
+          margin-top: 4rem;
+        }
+        .logo-image {
+          width: 20rem;
+        }
+        .title-image {
+          width: 20rem;
+          margin-top: 2rem;
+          position: absolute;
         }
         .btn {
           background-color: white;
@@ -57,7 +61,7 @@ const PageHome = () => (
         }
       `}
     </style>
-  </div>
+  </div >
 );
 
 export default PageHome;
