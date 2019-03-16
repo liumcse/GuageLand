@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+// eslint-disable-next-line no-unused-vars
 const Toolbar = props => (
   <div className="container">
     <div className="small">
