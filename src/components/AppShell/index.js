@@ -1,5 +1,7 @@
 import React from "react";
 import Toolbar from "@components/Toolbar";
+import { withRouter } from "react-router";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 import {
@@ -9,7 +11,9 @@ import {
   faPiggyBank,
   faHome,
   faCog,
-  faGlobeAsia
+  faGlobeAsia,
+  faMicrophone,
+  faPaperPlane
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -19,19 +23,33 @@ library.add(
   faPiggyBank,
   faHome,
   faCog,
-  faGlobeAsia
+  faGlobeAsia,
+  faMicrophone,
+  faPaperPlane
 );
 
-export default props => (
-  <div className="container">
-    {props.children}
-    <Toolbar />
-    <style jsx>{`
-      .container {
-        color: grey;
-        background-color: #5cadff;
-        min-height: 100vh;
-      }
-    `}</style>
-  </div>
-);
+const NO_TOOLBAR_PATH = ["/chat"];
+
+export default withRouter(props => {
+  const {
+    location: { pathname }
+  } = props;
+  return (
+    <div className="container">
+      {props.children}
+      <div className="toolbar">
+        <Toolbar />
+      </div>
+      <style jsx>{`
+        .container {
+          color: grey;
+          background-color: #5cadff;
+          min-height: 100vh;
+        }
+        .toolbar {
+          display: ${NO_TOOLBAR_PATH.includes(pathname) ? "none" : "block"};
+        }
+      `}</style>
+    </div>
+  );
+});

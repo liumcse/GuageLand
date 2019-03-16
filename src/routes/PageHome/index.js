@@ -12,9 +12,6 @@ const PageHome = () => (
     <Link
       to="/login"
       style={{
-        textDecoration: "none",
-        color: "inherit",
-        display: "inline",
         marginTop: "8rem"
       }}
     >
@@ -23,9 +20,6 @@ const PageHome = () => (
     <Link
       to="#"
       style={{
-        textDecoration: "none",
-        color: "inherit",
-        display: "inline",
         marginTop: "1rem"
       }}
     >
