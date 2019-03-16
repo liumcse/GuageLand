@@ -30,6 +30,7 @@ const Text = props => (
         border-radius: 0.4em;
         padding: 1rem;
         max-width: 60%;
+        word-break: break-word;
         //margin-top: -0.5rem;
       }
 
