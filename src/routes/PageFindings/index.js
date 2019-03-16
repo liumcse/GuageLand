@@ -7,9 +7,7 @@ const PageFindings = () => (
     <Findings /> 
     <style jsx>
       {`
-        .container {
-
-        }
+        
       `}
     </style>
   </div>
