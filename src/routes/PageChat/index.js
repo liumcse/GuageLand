@@ -26,6 +26,14 @@ class PageChat extends React.Component {
       })
   }
 
+  scrollToBottom = () => {
+    this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+  }
+
+  componentDidUpdate() {
+    this.scrollToBottom();
+  }
+  
   render() {
     return (
       <div className="container">
@@ -35,6 +43,9 @@ class PageChat extends React.Component {
               <ChatMessage incoming={message.incoming} msg={message.msg} key={"chat_" + ind}/>
             )
           })}
+        </div>
+        <div style={{ float:"left", clear: "both" }}
+             ref={(el) => { this.messagesEnd = el; }}>
         </div>
         <div className="input-bar">
           <InputBar sendMessage={this.sendMessage} />
