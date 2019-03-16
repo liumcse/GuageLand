@@ -10,7 +10,7 @@ const PageHome = () => (
     </div>
     <img className="title-image" src={Title} alt="title" />
     <Link
-      to="#"
+      to="/login"
       style={{
         textDecoration: "none",
         color: "inherit",
@@ -37,6 +37,7 @@ const PageHome = () => (
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
           text-align: center;
           padding: 1rem;
         }
@@ -49,7 +50,7 @@ const PageHome = () => (
         }
         .title-image {
           width: 20rem;
-          margin-top: 9rem;
+          margin-top: 2rem;
           position: absolute;
         }
         .btn {
