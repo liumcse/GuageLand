@@ -13,9 +13,7 @@ import PageHouse from "@routes/PageHouse";
 import PageProfile from "@routes/PageProfile";
 import PageSearch from "@routes/PageSearch";
 
-// Import global style
-import "src/styles/app.scss";
-import "src/styles/normalize.scss";
+import "src/styles/normalize.css";
 
 const App = () => (
   <AppShell>
