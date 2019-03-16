@@ -11,9 +11,10 @@ import PageChat from "@routes/PageChat";
 import PageDiscovery from "@routes/PageDiscovery";
 import PageHouse from "@routes/PageHouse";
 import PageProfile from "@routes/PageProfile";
-import PageSearch from "@routes/PageSearch";
+import PageFindings from "@routes/PageFindings";
 
 import "src/styles/normalize.css";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const App = () => (
   <AppShell>
@@ -25,7 +26,7 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_DISCOVERY} component={PageDiscovery} />
         <Route exact path={ROUTES.ROUTE_HOUSE} component={PageHouse} />
         <Route exact path={ROUTES.ROUTE_PROFILE} component={PageProfile} />
-        <Route exact path={ROUTES.ROUTE_SEARCH} component={PageSearch} />
+        <Route exact path={ROUTES.ROUTE_FINDINGS} component={PageFindings} />
         {/* Add more routes here */}
       </Switch>
     </Router>
@@ -34,6 +35,9 @@ const App = () => (
         :root {
           font-size: 16px;
           color: black;
+        }
+        .image-gallery-slides {
+          height: 12rem;
         }
       `}
     </style>
