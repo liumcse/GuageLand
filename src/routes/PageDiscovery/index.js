@@ -25,7 +25,7 @@ const __load_globe = () => {
     // eslint-disable-next-line no-undef
     planetaryjs.plugins.earth({
       topojson: {
-        file: "http://planetaryjs.com/world-110m-withlakes.json"
+        file: "https://planetaryjs.com/world-110m-withlakes.json"
       },
       oceans: { fill: "#00a4d1" },
       land: { fill: "#eddc44" },
