@@ -17,7 +17,7 @@ TBH I find it awesome.
 1. Clone this repo
 
 ```
-$ git clone https://github.com/lyming90/react-minimal-boilerplate.git
+$ git clone https://github.com/liumcse/fosshack.git
 ```
 
 2. I hope you already have yarn installed on your computer. If you have, run the following command to install all dependencies.

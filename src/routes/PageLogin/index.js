@@ -1,31 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const PageHome = () => (
+const PageLogin = () => (
   <div className="container">
     <div className="logo" />
-    <Link
-      to="/login"
-      style={{
-        textDecoration: "none",
-        color: "inherit",
-        display: "inline",
-        marginTop: "5rem"
-      }}
-    >
-      <div className="btn login">LOGIN</div>
-    </Link>
-    <Link
-      to="#"
-      style={{
-        textDecoration: "none",
-        color: "inherit",
-        display: "inline",
-        marginTop: "1rem"
-      }}
-    >
-      <div className="btn sign-up">SIGN UP</div>
-    </Link>
+    <div>Yo Yo world!</div>
     <style jsx>
       {`
         .container {
@@ -60,4 +39,4 @@ const PageHome = () => (
   </div>
 );
 
-export default PageHome;
+export default PageLogin;
