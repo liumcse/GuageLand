@@ -5,6 +5,7 @@ const devMode = process.env.NODE_ENV !== "production";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
 
 // constants
@@ -150,7 +151,12 @@ const config = {
     new ScriptExtHtmlWebpackPlugin({
       preload: /\.css$/,
       defaultAttribute: "async"
-    })
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(SRC_PATH, "public")
+      }
+    ])
   ]
 };
 
