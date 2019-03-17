@@ -13,12 +13,9 @@ import PageHouse from "@routes/PageHouse";
 import PageProfile from "@routes/PageProfile";
 import PageFindings from "@routes/PageFindings";
 import PageArticle from "@routes/PageArticle";
-<<<<<<< HEAD
 import PageQuiz from "@routes/PageQuiz";
-=======
 import PageLanguage from "./routes/PageLanguage";
 import PageTasks from "@routes/PageTasks";
->>>>>>> 9a5c5a67dbc6df1e81eacad6795cca7d83a96784
 
 // PWA
 import * as serviceWorker from "./public/serviceWorker";
@@ -38,11 +35,8 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_TASKS} component={PageTasks} />
         <Route exact path={ROUTES.ROUTE_FINDINGS} component={PageFindings} />
         <Route exact path={ROUTES.ROUTE_ARTICLE} component={PageArticle} />
-<<<<<<< HEAD
         <Route exact path={ROUTES.ROUTE_QUIZ} component={PageQuiz} />
-=======
         <Route exact path={ROUTES.ROUTE_LANGUAGE} component={PageLanguage} />
->>>>>>> 9a5c5a67dbc6df1e81eacad6795cca7d83a96784
         <Route path={ROUTES.ROUTE_HOME} component={PageHome} />
         {/* Add more routes here */}
       </Switch>
