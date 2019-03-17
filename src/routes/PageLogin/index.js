@@ -30,8 +30,8 @@ const PageLogin = () => (
           padding: 1rem;
         }
         .logo {
-          border-radius: 5rem;
-          margin-top: 2rem;
+          border-radius: 8rem;
+          margin-top: 5rem;
         }
         #Password{
           padding: 0.5rem;
