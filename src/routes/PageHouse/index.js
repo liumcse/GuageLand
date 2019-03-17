@@ -38,12 +38,14 @@ class PageHouse extends React.Component {
   levelUp = () => {
     if(this.state.reward>=200){
       this.houseImg.current.classList.remove("init", "apply-jelly")
+      this.lvlImg.current.classList.remove("init", "apply-jelly")
       setTimeout(()=>{
         this.setState({
           ...this.state,
           level: this.state.level + 1,
           reward: this.state.reward - 200
         })
+        this.lvlImg.current.classList.add("apply-jelly")
         this.houseImg.current.classList.add("apply-jelly")
       }, 500);
       
