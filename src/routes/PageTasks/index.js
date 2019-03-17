@@ -176,6 +176,7 @@ const PageTasks = () => {
           padding: 0.5rem 1rem;
           color: black;
           font-size: 0.9rem;
+          min-height: 3.5rem;
         }
         .icon-group {
           display: flex;

@@ -47,6 +47,7 @@ const PageHome = () => (
           width: 20rem;
           margin-top: 2rem;
           position: absolute;
+          z-index: -1;
         }
         .btn {
           background-color: white;
@@ -55,10 +56,6 @@ const PageHome = () => (
           border-radius: 3px;
           width: 10rem;
           padding: 1rem 0;
-        }
-        .login {
-        }
-        .sign-up {
         }
       `}
     </style>

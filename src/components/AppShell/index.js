@@ -31,9 +31,8 @@ library.add(
   faChevronLeft
 );
 
-const NO_TOOLBAR_PATH = ["/chat", "/login"];
-const NO_TOPBAR_PATH = ["/", "/login"];
-
+const NO_TOOLBAR_PATH = ["/chat", "/login", "/"];
+const NO_TOPBAR_PATH = ["/", "/house", "/findings"];
 
 export default withRouter(props => {
   const {

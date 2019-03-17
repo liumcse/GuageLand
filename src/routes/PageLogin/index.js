@@ -11,24 +11,22 @@ const PageLogin = () => (
     </div>
     <img className="title-img" src={Title} />
     <div className="login_page">
-      <input type="email" id="Login" placeholder="Login"></input>
-      <input type="password" id="Password" placeholder="Password"></input>
+      <input type="email" id="Login" placeholder="Login" />
+      <input type="password" id="Password" placeholder="Password" />
     </div>
     <div className="Btn_wrapper">
-      <Link
-        to="/findings"
-        style={{ marginTop: "3rem" }}>
+      <Link to="/findings" style={{ marginTop: "3rem" }}>
         <div className="btn">LOGIN</div>
       </Link>
     </div>
     <style jsx>
       {`
-        .title-img{
+        .title-img {
           width: 20rem;
           margin-top: 2rem;
           position: absolute;
         }
-        
+
         .container {
           display: flex;
           flex-direction: column;
@@ -40,8 +38,9 @@ const PageLogin = () => (
         .logo {
           border-radius: 8rem;
           margin-top: 4rem;
+          z-index: -1;
         }
-        #Password{
+        #Password {
           padding: 0.5rem;
           margin-top: 1rem;
           height: 1rem;
@@ -54,7 +53,7 @@ const PageLogin = () => (
           margin-top: 6rem;
           height: 5rem;
         }
-        .btn{
+        .btn {
           margin-top: 3rem;
           background-color: white;
           color: black;
@@ -64,7 +63,7 @@ const PageLogin = () => (
         }
       `}
     </style>
-  </div >
+  </div>
 );
 
 export default PageLogin;
