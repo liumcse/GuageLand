@@ -1,10 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import GoodImg from "@components/GoodImg";
+import logoIcon from "@common/assets/icons/logo.png";
 
 const PageLogin = () => (
   <div className="container">
-    <div className="logo" />
-    <div>Yo Yo world!</div>
+    <div className="logo">
+      <GoodImg src={logoIcon} width="10rem" />
+    </div>
+    <div className="login_page">
+      <input type="email" id="Login" placeholder="Login"></input>
+      <input type="password" id="Password" placeholder="Password"></input>
+    </div>
+    <div className="Btn_wrapper">
+      <Link
+        to="/findings"
+        style={{ marginTop: "3rem" }}>
+        <div className="btn">Submmit</div>
+      </Link>
+    </div>
     <style jsx>
       {`
         .container {
@@ -16,27 +30,33 @@ const PageLogin = () => (
           padding: 1rem;
         }
         .logo {
-          background-color: red;
-          width: 10rem;
-          height: 10rem;
-          border-radius: 10rem;
-          margin-top: 20%;
+          border-radius: 5rem;
+          margin-top: 2rem;
         }
-        .btn {
+        #Password{
+          padding: 0.5rem;
+          margin-top: 1rem;
+          height: 1rem;
+        }
+        #Login {
+          padding: 0.5rem;
+          height: 1rem;
+        }
+        .login_page {
+          margin-top: 2rem;
+          height: 5rem;
+        }
+        .btn{
+          margin-top: 3rem;
           background-color: white;
           color: black;
-          border: none;
-          border-radius: 3px;
-          width: 10rem;
-          padding: 1rem 0;
-        }
-        .login {
-        }
-        .sign-up {
+          border: 2px solid orange;
+          width: 5rem;
+          padding: 0.5rem;
         }
       `}
     </style>
-  </div>
+  </div >
 );
 
 export default PageLogin;
