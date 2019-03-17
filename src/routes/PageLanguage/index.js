@@ -6,25 +6,24 @@ const PageLanguage = () => {
   return (
     <div className="container">
       <div className="heading">
-        <div className="language-name">Language Name</div>
+        <div className="language-name">Bisu</div>
         <div className="badge-container">
-          <div className="badge yellow">Malaysia</div>
-          <div className="badge red">Severely Endangered</div>
+          <div className="badge yellow">Laos</div>
+          <div className="badge red">Threatened</div>
         </div>
       </div>
       <div className="info">
-        <div>Also known as: TODO</div>
-        <div>Classification: TODO</div>
-        <div>Orthography: TODO</div>
-        <div>Code Authority: TODO</div>
-        <div>Language Code: TODO</div>
+        <div>Also known as: Mibisu, Misu, Mibisu, Mbi</div>
+        <div>Classification: Sino-Tibetan, Lolo-Burmese</div>
+        <div>Code Authority: ISO 639-3</div>
+        <div>Language Code: bzi</div>
       </div>
       <div className="graph">
         <GoodImg width="100%" src={graphIcon} />
       </div>
       <div className="data">
         <div className="data-card yellow">1,500 years history</div>
-        <div className="data-card green">7,000 people are using</div>
+        <div className="data-card green">{"< 2,740 people are using"}</div>
       </div>
       <style jsx>{`
         .container {
@@ -54,8 +53,9 @@ const PageLanguage = () => {
           background-color: crimson;
         }
         .info {
-          display: flex;
-          flex-direction: column;
+          display: grid;
+          grid-template-columns: auto;
+          grid-row-gap: 0.5rem;
           color: white;
           font-size: 0.85rem;
           margin-top: 0.5rem;
@@ -64,6 +64,7 @@ const PageLanguage = () => {
           background-color: white;
           padding: 0.5rem;
           margin-top: 1rem;
+          border: 1px solid black;
         }
         .data {
           margin-top: 1rem;

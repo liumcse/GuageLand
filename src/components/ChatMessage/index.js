@@ -1,10 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 import avatar from "@common/assets/pic/avatar.jpg";
+import myAvatar from "@common/assets/pic/user_profile.png";
 
 const Avatar = () => (
   <div className="container">
     <img className="avatar" src={avatar} />
+    <style jsx>{`
+      .container {
+        display: inline;
+      }
+      .avatar {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+      }
+    `}</style>
+  </div>
+);
+
+const MyAvatar = () => (
+  <div className="container">
+    <img className="avatar" src={myAvatar} />
     <style jsx>{`
       .container {
         display: inline;
@@ -80,7 +97,7 @@ const Text = props => (
 const ChatMessage = props => {
   return (
     <div className="container">
-      <Avatar />
+      {props.incoming ? <Avatar /> : <MyAvatar />}
       <Text incoming={props.incoming} msg={props.msg} />
       <style jsx>{`
         .container {

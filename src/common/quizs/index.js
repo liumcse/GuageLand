@@ -1,27 +1,27 @@
 export default [
   {
-    question: "What is the name of this contry?",
+    question: "What is an indigenous languages in Laos?",
     answers: [
       {
         type: "0",
-        content: "Cambodia"
+        content: "Arem"
       },
       {
         type: "1",
-        content: "Vietanam"
+        content: "Cham"
       },
       {
         type: "2",
-        content: "Thailand"
+        content: "Zhau"
       },
       {
         type: "3",
-        content: "Laos"
+        content: "Luhao"
       }
     ]
   },
   {
-    question: "What is the capital city?",
+    question: "What is the capital city of Laos?",
     answers: [
       {
         type: "0",
@@ -42,7 +42,7 @@ export default [
     ]
   },
   {
-    question: "Which festival is from this contry?",
+    question: "Which festival is from Laos?",
     answers: [
       {
         type: "0",
@@ -63,28 +63,29 @@ export default [
     ]
   },
   {
-    question: "When is the national day?",
+    question:
+      "For language Bisu, how many native speakers are there worldwide?",
     answers: [
       {
         type: "0",
-        content: "1 May"
+        content: "0 - 500"
       },
       {
         type: "1",
-        content: "5 June"
+        content: "500 - 1000"
       },
       {
         type: "2",
-        content: "9 Nov"
+        content: "1000 - 5000"
       },
       {
         type: "3",
-        content: "2 Dec"
+        content: "> 5000"
       }
     ]
   },
   {
-    question: "Which dish is famous from this country?",
+    question: "Which dish is famous from Laos?",
     answers: [
       {
         type: "0",

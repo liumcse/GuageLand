@@ -53,6 +53,10 @@ class PageChat extends React.Component {
     return (
       <div className="container">
         <div className="message-wall">
+          <ChatMessage
+            incoming
+            msg="Nice to meet you! I'm SUSI and I can talk. Let's talk!"
+          />
           {this.state.messages.map((message, ind) => {
             return (
               <ChatMessage
@@ -75,6 +79,9 @@ class PageChat extends React.Component {
         <style jsx>{`
           .container {
             padding: 2rem 0 4rem 0;
+          }
+          .message-wall {
+            padding-top: 2rem;
           }
         `}</style>
       </div>
