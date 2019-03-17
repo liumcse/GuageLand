@@ -5,7 +5,7 @@ import GoodImg from "@components/GoodImg";
 import userProfileIcon from "@common/assets/pic/user_profile.png";
 import rightArrowIcon from "@common/assets/icons/right-arrow.jpg";
 import taskIcon from "@common/assets/icons/task_icon.png";
-import favIcon from "@common/assets/icons/favorite.png";
+import quizIcon from "@common/assets/icons/quiz_icon.png";
 import paperPlaneIcon from "@common/assets/icons/paper_plane.png";
 import postIcon from "@common/assets/icons/post_icon.png";
 import rewardIcon from "@common/assets/icons/reward_icon.png";
@@ -40,12 +40,14 @@ const PageProfile = () => (
           <GoodImg width="1rem" src={rightArrowIcon} />
         </div>
       </Link>
-      <div className="element">
-        <GoodImg width="2rem" src={favIcon} />
-        <div>Favorites</div>
-        <GoodImg width="1rem" src={rightArrowIcon} />
-      </div>
-       <Link to="/profile/organization">
+      <Link to="/quiz">
+        <div className="element">
+          <GoodImg width="2rem" src={quizIcon} />
+          <div>Take Quiz</div>
+          <GoodImg width="1rem" src={rightArrowIcon} />
+        </div>
+      </Link>
+      <Link to="/profile/organization">
         <div className="element">
           <GoodImg width="2rem" src={paperPlaneIcon} />
           <div>Organization</div>
