@@ -15,22 +15,21 @@ const PageOrganization = () => {
       <div className="logo">
         <GoodImg src={logoIcon} width="10rem" />
       </div>
-      <img className="title-image" src={Title} alt="title" />
+      <h3 className="title">GUAGELAND</h3>
         <div className="cards">
           <Card className="card">
             <CardActionArea>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Word of the day
+                    World Organization
               </Typography>
                   <Typography component="p">
-                    Since today is Valentine's Day... Let's see what is the word of
-                    the day!
+                    Let's save the endangered indegenous languages!
               </Typography>
                 </CardContent>
            
             </CardActionArea>
-            <CardActions className="action-btn">
+            <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
@@ -54,19 +53,10 @@ const PageOrganization = () => {
           margin-top: 2rem;
         }
      
-        .title-image {
-          width: 20rem;
-          margin-top: 2rem;
-          position: absolute;
-          z-index: -1;
+        .title {
+          color: white;
         }
-        .cards {
-          margin-top: 8rem;
-        }
-        .action-btn {
-          display: flex;
-          justify-content: space-evenly;
-        }
+    
       `}</style>
     </div>
   );
