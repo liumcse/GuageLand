@@ -91,7 +91,6 @@ class PageHouse extends React.Component {
                 }
                 .land-img {
                   width: 100vw;
-                  width: 100vw;
                   height: 40rem;
                 }
                 .house-img {
