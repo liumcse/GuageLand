@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const Question = props => (
   <div>
     <h2 className="question">{props.content}</h2>
-    <style>{`
+    <style>
+      {`
     .question {
       margin: 0;
       padding: 0.5rem 2.5rem 1.5rem 2.5rem;
@@ -12,6 +13,6 @@ const Question = props => (
     `}
     </style>
   </div>
-)
+);
 
 export default Question;

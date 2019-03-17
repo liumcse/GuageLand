@@ -16,6 +16,7 @@ import PageArticle from "@routes/PageArticle";
 import PageQuiz from "@routes/PageQuiz";
 import PageLanguage from "./routes/PageLanguage";
 import PageTasks from "@routes/PageTasks";
+import PageQuizDone from "@routes/PageQuizDone";
 
 // PWA
 import * as serviceWorker from "./public/serviceWorker";
@@ -37,6 +38,7 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_ARTICLE} component={PageArticle} />
         <Route exact path={ROUTES.ROUTE_QUIZ} component={PageQuiz} />
         <Route exact path={ROUTES.ROUTE_LANGUAGE} component={PageLanguage} />
+        <Route exact path={ROUTES.ROUTE_QUIZ_DONE} component={PageQuizDone} />
         <Route path={ROUTES.ROUTE_HOME} component={PageHome} />
         {/* Add more routes here */}
       </Switch>
