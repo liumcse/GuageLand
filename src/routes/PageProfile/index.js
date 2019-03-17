@@ -45,11 +45,13 @@ const PageProfile = () => (
         <div>Favorites</div>
         <GoodImg width="1rem" src={rightArrowIcon} />
       </div>
-      <div className="element">
-        <GoodImg width="2rem" src={paperPlaneIcon} />
-        <div>Paper Airplane</div>
-        <GoodImg width="1rem" src={rightArrowIcon} />
-      </div>
+       <Link to="/profile/organization">
+        <div className="element">
+          <GoodImg width="2rem" src={paperPlaneIcon} />
+          <div>Organization</div>
+          <GoodImg width="1rem" src={rightArrowIcon} />
+        </div>
+      </Link>
       <div className="element">
         <GoodImg width="2rem" src={postIcon} />
         <div>My Posts</div>

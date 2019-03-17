@@ -5,6 +5,7 @@ export const ROUTE_DISCOVERY = "/discovery";
 export const ROUTE_HOUSE = "/house";
 export const ROUTE_PROFILE = "/profile";
 export const ROUTE_TASKS = "/profile/tasks";
+export const ROUTE_ORGANIZATION = "/profile/organization";
 export const ROUTE_FINDINGS = "/findings";
 export const ROUTE_ARTICLE = "/article/:slug";
 export const ROUTE_QUIZ = "/quiz";
