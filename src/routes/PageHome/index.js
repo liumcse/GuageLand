@@ -38,7 +38,7 @@ const PageHome = () => (
         }
         .logo {
           border-radius: 10rem;
-          margin-top: 4rem;
+          margin-top: 2rem;
         }
         .logo-image {
           width: 20rem;
