@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoImage from "@common/assets/icons/logo.png";
+import logoIcon from "@common/assets/icons/logo.png";
 import Title from "@common/assets/icons/Guageland_title.png";
+import GoodImg from "@components/GoodImg";
 
 const PageHome = () => (
   <div className="container">
     <div className="logo">
-      <img className="logo-image" src={LogoImage} alt="Logo" />
+      <GoodImg src={logoIcon} width="10rem" />
     </div>
     <img className="title-image" src={Title} alt="title" />
     <Link
@@ -37,7 +38,7 @@ const PageHome = () => (
         }
         .logo {
           border-radius: 10rem;
-          margin-top: 4rem;
+          margin-top: 2rem;
         }
         .logo-image {
           width: 20rem;
@@ -46,6 +47,7 @@ const PageHome = () => (
           width: 20rem;
           margin-top: 2rem;
           position: absolute;
+          z-index: -1;
         }
         .btn {
           background-color: white;
@@ -55,13 +57,9 @@ const PageHome = () => (
           width: 10rem;
           padding: 1rem 0;
         }
-        .login {
-        }
-        .sign-up {
-        }
       `}
     </style>
-  </div >
+  </div>
 );
 
 export default PageHome;

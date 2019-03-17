@@ -13,32 +13,24 @@ const PageArticle = () => (
       <Card className="card">
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            Word of the Day - "I Love You”
           </Typography>
           <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica.
+            <small>
+              Posted by <strong>Navajo</strong>
+            </small>
           </Typography>
           <br />
           <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica.
+            Since today is Valentine's Day, I decided to make today's Navajo
+            Word of the Day
           </Typography>
           <br />
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica.
-          </Typography>
+          <Typography component="p">"Ayóó'ánííníshní,”</Typography>
           <br />
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica.
-          </Typography>
+          <Typography component="p">which means,</Typography>
           <br />
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica.
-          </Typography>
+          <Typography component="p">"I Love You!"</Typography>
         </CardContent>
       </Card>
     </div>
@@ -57,12 +49,12 @@ const PageArticle = () => (
       .bottom-bar {
         position: fixed;
         bottom: 3.5rem;
-        background-color: #52b3fb;
+        background-color: #66a5d4;
         width: 100%;
         color: white;
         display: flex;
         justify-content: space-around;
-        height: 3rem;
+        height: 3.5rem;
         color: white;
         align-items: center;
       }

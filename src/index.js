@@ -13,7 +13,12 @@ import PageHouse from "@routes/PageHouse";
 import PageProfile from "@routes/PageProfile";
 import PageFindings from "@routes/PageFindings";
 import PageArticle from "@routes/PageArticle";
+<<<<<<< HEAD
 import PageQuiz from "@routes/PageQuiz";
+=======
+import PageLanguage from "./routes/PageLanguage";
+import PageTasks from "@routes/PageTasks";
+>>>>>>> 9a5c5a67dbc6df1e81eacad6795cca7d83a96784
 
 // PWA
 import * as serviceWorker from "./public/serviceWorker";
@@ -30,9 +35,14 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_DISCOVERY} component={PageDiscovery} />
         <Route exact path={ROUTES.ROUTE_HOUSE} component={PageHouse} />
         <Route exact path={ROUTES.ROUTE_PROFILE} component={PageProfile} />
+        <Route exact path={ROUTES.ROUTE_TASKS} component={PageTasks} />
         <Route exact path={ROUTES.ROUTE_FINDINGS} component={PageFindings} />
         <Route exact path={ROUTES.ROUTE_ARTICLE} component={PageArticle} />
+<<<<<<< HEAD
         <Route exact path={ROUTES.ROUTE_QUIZ} component={PageQuiz} />
+=======
+        <Route exact path={ROUTES.ROUTE_LANGUAGE} component={PageLanguage} />
+>>>>>>> 9a5c5a67dbc6df1e81eacad6795cca7d83a96784
         <Route path={ROUTES.ROUTE_HOME} component={PageHome} />
         {/* Add more routes here */}
       </Switch>
@@ -41,8 +51,8 @@ const App = () => (
           :root {
             font-size: 16px;
             color: black;
-            font-family: "Libre Baskerville", serif;
-            background-color: rgba(137, 187, 187, 0.8);
+            font-family: "Open Sans", sans-serif;
+            background-color: #60afffff;
           }
           a {
             text-decoration: none;
@@ -61,9 +71,20 @@ const App = () => (
             margin-top: 1rem;
             margin-left: 1rem;
           }
-          .MuiFab-root-30.MuiFab-disabled-36, #reward-tag {
+          .MuiFab-root-30.MuiFab-disabled-36,
+          #reward-tag {
             color: black;
             background-color: rgba(255, 255, 255, 1);
+          }
+          .no-select,
+          img {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
           }
         `}
       </style>
