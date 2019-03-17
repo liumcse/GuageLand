@@ -3,6 +3,7 @@ export const ROUTE_LOGIN = "/login";
 export const ROUTE_CHAT = "/chat";
 export const ROUTE_DISCOVERY = "/discovery";
 export const ROUTE_HOUSE = "/house";
+export const ROUTE_HOUSECAROUSEL = "/housecarousel";
 export const ROUTE_PROFILE = "/profile";
 export const ROUTE_FINDINGS = "/findings";
 export const ROUTE_ARTICLE = "/article/:slug";

@@ -14,6 +14,7 @@ import PageProfile from "@routes/PageProfile";
 import PageFindings from "@routes/PageFindings";
 import PageArticle from "@routes/PageArticle";
 import PageLanguage from "./routes/PageLanguage";
+import PageHouseCarousel from "@routes/PageHouseCarousel";
 
 // PWA
 import * as serviceWorker from "./public/serviceWorker";
@@ -33,6 +34,7 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_FINDINGS} component={PageFindings} />
         <Route exact path={ROUTES.ROUTE_ARTICLE} component={PageArticle} />
         <Route exact path={ROUTES.ROUTE_LANGUAGE} component={PageLanguage} />
+        <Route exact path={ROUTES.ROUTE_HOUSECAROUSEL} component={PageHouseCarousel} />
         <Route path={ROUTES.ROUTE_HOME} component={PageHome} />
         {/* Add more routes here */}
       </Switch>
