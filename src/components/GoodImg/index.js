@@ -17,8 +17,8 @@ const GoodImg = props => (
 );
 
 GoodImg.propTypes = {
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
+  width: PropTypes.string,
+  height: PropTypes.string,
   src: PropTypes.string.isRequired
 };
 

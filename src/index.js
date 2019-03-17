@@ -13,6 +13,7 @@ import PageHouse from "@routes/PageHouse";
 import PageProfile from "@routes/PageProfile";
 import PageFindings from "@routes/PageFindings";
 import PageArticle from "@routes/PageArticle";
+import PageLanguage from "./routes/PageLanguage";
 
 // PWA
 import * as serviceWorker from "./public/serviceWorker";
@@ -31,6 +32,7 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_PROFILE} component={PageProfile} />
         <Route exact path={ROUTES.ROUTE_FINDINGS} component={PageFindings} />
         <Route exact path={ROUTES.ROUTE_ARTICLE} component={PageArticle} />
+        <Route exact path={ROUTES.ROUTE_LANGUAGE} component={PageLanguage} />
         <Route path={ROUTES.ROUTE_HOME} component={PageHome} />
         {/* Add more routes here */}
       </Switch>
@@ -59,9 +61,20 @@ const App = () => (
             margin-top: 1rem;
             margin-left: 1rem;
           }
-          .MuiFab-root-30.MuiFab-disabled-36, #reward-tag {
+          .MuiFab-root-30.MuiFab-disabled-36,
+          #reward-tag {
             color: black;
             background-color: rgba(255, 255, 255, 1);
+          }
+          .no-select,
+          img {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
           }
         `}
       </style>

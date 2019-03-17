@@ -28,10 +28,12 @@ const Text = props => (
         background-color: white;
         position: relative;
         border-radius: 0.4em;
-        padding: 1rem;
+        padding: 1.5rem;
         max-width: 60%;
         word-break: break-word;
-        //margin-top: -0.5rem;
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
       }
 
       .speech-bubble {
@@ -79,12 +81,12 @@ const ChatMessage = props => {
   return (
     <div className="container">
       <Avatar />
-      <Text incoming={props.incoming} msg={props.msg}/>
+      <Text incoming={props.incoming} msg={props.msg} />
       <style jsx>{`
         .container {
           display: flex;
           flex-direction: ${props.incoming ? "row" : "row-reverse"};
-          padding: 0 2rem;
+          padding: 0 1rem;
           margin-bottom: 2rem;
         }
       `}</style>

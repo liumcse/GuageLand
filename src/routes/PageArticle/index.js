@@ -62,7 +62,7 @@ const PageArticle = () => (
         color: white;
         display: flex;
         justify-content: space-around;
-        height: 3rem;
+        height: 3.5rem;
         color: white;
         align-items: center;
       }

@@ -1,41 +1,57 @@
 import React from "react";
+import GoodImg from "@components/GoodImg";
 import { Link } from "react-router-dom";
-
+import { withRouter } from "react-router";
 import botIcon from "@common/assets/icons/chatbot.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import homeIcon from "@common/assets/icons/home_icon.png";
+import earthIcon from "@common/assets/icons/earth_button.png";
+import magnifierIcon from "@common/assets/icons/magnifier.png";
+import profileIcon from "@common/assets/icons/profile_icon.png";
 
 // eslint-disable-next-line no-unused-vars
+const Findings = ["/findings"];
+const Chat = ["/chat"];
+const House = ["/house"];
+const Profile = ["/profile"];
+
 const Toolbar = props => {
+  const {
+    location: { pathname }
+  } = props;
   return (
-    <div className="container">
-      <div className="small">
-        <div className="icon-wrapper">
+    <div className="container no-select">
+      <div className="small no-select">
+        <div id="findings" className="icon-wrapper no-select">
           <Link to="/findings">
-            <FontAwesomeIcon icon="search" size="2x" />
+            <GoodImg width="2rem" src={magnifierIcon} />
           </Link>
         </div>
-        <div className="icon-wrapper selected">
+      </div>
+      <div className="small no-select">
+        <div id="chat" className="icon-wrapper no-select">
           <Link to="/chat">
-            <img className="icon-bot" src={botIcon} />
+            <GoodImg width="2rem" src={botIcon} />
           </Link>
         </div>
       </div>
-      <div className="big">
-        <div className="icon-wrapper">
+      <div className="big no-select">
+        <div className="icon-wrapper no-select">
           <Link to="/discovery">
-            <FontAwesomeIcon icon="globe-asia" size="3x" />
+            <GoodImg width="3rem" src={earthIcon} />
           </Link>
         </div>
       </div>
-      <div className="small">
-        <div className="icon-wrapper">
+      <div className="small no-select">
+        <div id="house" className="icon-wrapper no-select">
           <Link to="/house">
-            <FontAwesomeIcon icon="home" size="2x" />
+            <GoodImg width="2rem" src={homeIcon} />
           </Link>
         </div>
-        <div className="icon-wrapper">
-          <Link to="/">
-            <FontAwesomeIcon icon="cog" size="2x" />
+      </div>
+      <div className="small no-select">
+        <div id="profile" className="icon-wrapper no-select">
+          <Link to="/profile">
+            <GoodImg width="2rem" src={profileIcon} />
           </Link>
         </div>
       </div>
@@ -51,9 +67,8 @@ const Toolbar = props => {
           justify-content: space-around;
         }
         .small {
-          display: flex;
           justify-content: space-around;
-          width: 100%;
+          width: 50%;
           height: 100%;
           align-items: center;
         }
@@ -72,6 +87,7 @@ const Toolbar = props => {
           margin: auto;
           display: flex;
           align-items: center;
+          justify-content: center;
           height: 100%;
         }
         .icon-bot {
@@ -80,9 +96,23 @@ const Toolbar = props => {
         .selected {
           background-color: #9bb3e1;
         }
+        #findings {
+          background-color: ${Findings.includes(pathname)
+            ? "#9bb3e1"
+            : "white"};
+        }
+        #chat {
+          background-color: ${Chat.includes(pathname) ? "#9bb3e1" : "white"};
+        }
+        #profile {
+          background-color: ${Profile.includes(pathname) ? "#9bb3e1" : "white"};
+        }
+        #house {
+          background-color: ${House.includes(pathname) ? "#9bb3e1" : "white"};
+        }
       `}</style>
     </div>
   );
 };
 
-export default Toolbar;
+export default withRouter(Toolbar);
