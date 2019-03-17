@@ -53,8 +53,7 @@ export default withRouter(props => {
         }
         .container {
           color: grey;
-          background-color: rgba(137, 187, 187, 0.8);
-          min-height: 100vh;
+          max-height: 100vh;
         }
         .toolbar {
           display: ${NO_TOOLBAR_PATH.includes(pathname) ? "none" : "block"};
