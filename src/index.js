@@ -14,6 +14,7 @@ import PageProfile from "@routes/PageProfile";
 import PageFindings from "@routes/PageFindings";
 import PageArticle from "@routes/PageArticle";
 import PageLanguage from "./routes/PageLanguage";
+import PageTasks from "@routes/PageTasks";
 
 // PWA
 import * as serviceWorker from "./public/serviceWorker";
@@ -30,6 +31,7 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_DISCOVERY} component={PageDiscovery} />
         <Route exact path={ROUTES.ROUTE_HOUSE} component={PageHouse} />
         <Route exact path={ROUTES.ROUTE_PROFILE} component={PageProfile} />
+        <Route exact path={ROUTES.ROUTE_TASKS} component={PageTasks} />
         <Route exact path={ROUTES.ROUTE_FINDINGS} component={PageFindings} />
         <Route exact path={ROUTES.ROUTE_ARTICLE} component={PageArticle} />
         <Route exact path={ROUTES.ROUTE_LANGUAGE} component={PageLanguage} />
@@ -41,8 +43,8 @@ const App = () => (
           :root {
             font-size: 16px;
             color: black;
-            font-family: "Libre Baskerville", serif;
-            background-color: rgba(137, 187, 187, 0.8);
+            font-family: "Open Sans", sans-serif;
+            background-color: #60afffff;
           }
           a {
             text-decoration: none;

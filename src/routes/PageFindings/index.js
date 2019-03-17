@@ -41,7 +41,34 @@ const generateArticle = () =>
 const PageFindings = () => (
   <div className="container">
     <Findings />
-    <div className="cards">{generateArticle()}</div>
+    <div className="cards">
+      <Card className="card">
+        <CardActionArea>
+          <Link to="/article/test-article">
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Word of the day
+              </Typography>
+              <Typography component="p">
+                Since today is Valentine's Day... Let's see what is the word of
+                the day!
+              </Typography>
+            </CardContent>
+          </Link>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Link to="/article/test-article">
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </Link>
+        </CardActions>
+      </Card>
+      {generateArticle()}
+    </div>
     <style jsx>
       {`
       .cards {
