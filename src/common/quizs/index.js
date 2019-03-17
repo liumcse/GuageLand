@@ -1,92 +1,110 @@
-var quizs = [
+export default [
   {
     question: "What is the name of this contry?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "Halo"
-          },
-          {
-              type: "Nintendo",
-              content: "Pokemon"
-          },
-          {
-              type: "Sony",
-              content: "Uncharted"
-          }
-      ]
+    answers: [
+      {
+        type: "0",
+        content: "Cambodia"
+      },
+      {
+        type: "1",
+        content: "Vietanam"
+      },
+      {
+        type: "2",
+        content: "Thailand"
+      },
+      {
+        type: "3",
+        content: "Laos"
+      }
+    ]
   },
   {
-      question: "Which console would you prefer to play with friends?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "X-Box"
-          },
-          {
-              type: "Nintendo",
-              content: "Nintendo 64"
-          },
-          {
-              type: "Sony",
-              content: "Playstation 1"
-          }
-      ]
+    question: "What is the capital city?",
+    answers: [
+      {
+        type: "0",
+        content: "Hanoi"
+      },
+      {
+        type: "1",
+        content: "Bangkok"
+      },
+      {
+        type: "2",
+        content: "Ho Chi Minh"
+      },
+      {
+        type: "3",
+        content: "Vientiane"
+      }
+    ]
   },
   {
-      question: "Which of these racing franchises would you prefer to play a game from?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "Forza"
-          },
-          {
-              type: "Nintendo",
-              content: "Mario Kart"
-          },
-          {
-              type: "Sony",
-              content: "Gran Turismo"
-          }
-      ]
+    question: "Which festival is from this contry?",
+    answers: [
+      {
+        type: "0",
+        content: "Hue Festival"
+      },
+      {
+        type: "1",
+        content: "Perfume Festival"
+      },
+      {
+        type: "2",
+        content: "Mid-Autumn Festival"
+      },
+      {
+        type: "3",
+        content: "Boun Pa Vet"
+      }
+    ]
   },
   {
-      question: "Which of these games do you think is best?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "BioShock"
-          },
-          {
-              type: "Nintendo",
-              content: "The Legend of Zelda: Ocarina of Time"
-          },
-          {
-              type: "Sony",
-              content: "Final Fantasy VII"
-          }
-      ]
+    question: "When is the national day?",
+    answers: [
+      {
+        type: "0",
+        content: "1 May"
+      },
+      {
+        type: "1",
+        content: "5 June"
+      },
+      {
+        type: "2",
+        content: "9 Nov"
+      },
+      {
+        type: "3",
+        content: "2 Dec"
+      }
+    ]
   },
   {
-      question: "What console would you prefer to own?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "X-Box One"
-          },
-          {
-              type: "Nintendo",
-              content: "Wii U"
-          },
-          {
-              type: "Sony",
-              content: "Playstation 4"
-          }
-      ]
+    question: "Which dish is famous from this country?",
+    answers: [
+      {
+        type: "0",
+        content: "Beef Noodle"
+      },
+      {
+        type: "1",
+        content: "Chilli Crab"
+      },
+      {
+        type: "2",
+        content: "Fries"
+      },
+      {
+        type: "3",
+        content: "Laap"
+      }
+    ]
   }
 ];
-
-export default quizs;
 
 /*
 {

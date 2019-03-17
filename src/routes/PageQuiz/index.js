@@ -1,33 +1,34 @@
-import React from 'react';
-import Quiz from '@components/Quiz';
-import quizs from '@common/quizs';
+import React from "react";
+import { withRouter } from "react-router-dom";
+import Quiz from "@components/Quiz";
+import quizs from "@common/quizs";
 
-class PageQuiz extends React.Component{
+class PageQuiz extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       counter: 0,
       questionId: 1,
-      question: '',
+      question: "",
       answers: [],
-      answer: '',
+      answer: "",
       answersCounter: {
         nintendo: 0,
         microsoft: 0,
         sony: 0
       },
-      result: ''
+      result: ""
     };
-    this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
   }
 
-  shuffleArray(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+  shuffleArray = array => {
+    let currentIndex = array.length,
+      temporaryValue,
+      randomIndex;
 
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
-
       // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
@@ -41,8 +42,10 @@ class PageQuiz extends React.Component{
     return array;
   };
 
-  componentWillMount() {
-    const shuffledAnswerOptions = quizs.map((question) => this.shuffleArray(question.answers));
+  componentDidMount() {
+    const shuffledAnswerOptions = quizs.map(question =>
+      this.shuffleArray(question.answers)
+    );
 
     this.setState({
       question: quizs[0].question,
@@ -50,7 +53,7 @@ class PageQuiz extends React.Component{
     });
   }
 
-  setNextQuestion() {
+  setNextQuestion = () => {
     const counter = this.state.counter + 1;
     const questionId = this.state.questionId + 1;
     this.setState({
@@ -58,28 +61,29 @@ class PageQuiz extends React.Component{
       questionId: questionId,
       question: quizs[counter].question,
       answers: quizs[counter].answers,
-      answer: ''
+      answer: ""
     });
-  }
+  };
 
-  setUserAnswer(answer) {
-    this.setState((state) => ({
+  setUserAnswer = answer => {
+    this.setState(state => ({
       answersCount: {
         ...state.answersCount,
         [answer]: state.answersCounter[answer] + 1
       },
       answer: answer
     }));
-  }
+  };
 
-  handleAnswerSelected(event) {
+  handleAnswerSelected = event => {
     this.setUserAnswer(event.currentTarget.value);
     if (this.state.questionId < quizs.length) {
       setTimeout(() => this.setNextQuestion(), 300);
     } else {
-      // do nothing for now
+      // done
+      this.props.history.replace("/quiz/done");
     }
-  }
+  };
 
   render() {
     //console.log(this.state.answers);
@@ -93,15 +97,9 @@ class PageQuiz extends React.Component{
           questionTotal={quizs.length}
           onAnswerSelected={this.handleAnswerSelected}
         />
-        <style jsx>{`
-
-
-
-
-        `}</style>
       </div>
     );
   }
 }
 
-export default PageQuiz;
+export default withRouter(PageQuiz);

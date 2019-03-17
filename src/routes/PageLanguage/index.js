@@ -48,7 +48,7 @@ const PageLanguage = () => {
           margin: 0.5rem 0;
         }
         .yellow {
-          background-color: #adad39;
+          background-color: #ffd966ff;
         }
         .red {
           background-color: crimson;
@@ -72,7 +72,7 @@ const PageLanguage = () => {
         }
         .green {
           margin-left: 1rem;
-          background-color: #3b923b;
+          background-color: #75d866ff;
         }
         .data-card {
           display: flex;
