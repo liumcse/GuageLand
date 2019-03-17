@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Title from "@common/assets/icons/Guageland_title.png";
 import GoodImg from "@components/GoodImg";
 import logoIcon from "@common/assets/icons/logo.png";
 
@@ -8,6 +9,7 @@ const PageLogin = () => (
     <div className="logo">
       <GoodImg src={logoIcon} width="10rem" />
     </div>
+    <img className="title-img" src={Title} />
     <div className="login_page">
       <input type="email" id="Login" placeholder="Login"></input>
       <input type="password" id="Password" placeholder="Password"></input>
@@ -21,6 +23,12 @@ const PageLogin = () => (
     </div>
     <style jsx>
       {`
+        .title-img{
+          width: 20rem;
+          margin-top: 2rem;
+          position: absolute;
+        }
+        
         .container {
           display: flex;
           flex-direction: column;
@@ -31,7 +39,7 @@ const PageLogin = () => (
         }
         .logo {
           border-radius: 8rem;
-          margin-top: 5rem;
+          margin-top: 4rem;
         }
         #Password{
           padding: 0.5rem;
@@ -43,7 +51,7 @@ const PageLogin = () => (
           height: 1rem;
         }
         .login_page {
-          margin-top: 2rem;
+          margin-top: 6rem;
           height: 5rem;
         }
         .btn{
