@@ -16,7 +16,7 @@ const PageLogin = () => (
       <Link
         to="/findings"
         style={{ marginTop: "3rem" }}>
-        <div className="btn">Submmit</div>
+        <div className="btn">LOGIN</div>
       </Link>
     </div>
     <style jsx>
