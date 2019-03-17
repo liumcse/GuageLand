@@ -15,7 +15,7 @@ import {
   faGlobeAsia,
   faMicrophone,
   faPaperPlane,
-  faChevronLeft
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -28,7 +28,7 @@ library.add(
   faGlobeAsia,
   faMicrophone,
   faPaperPlane,
-  faChevronLeft
+  faChevronLeft,
 );
 
 const NO_TOOLBAR_PATH = ["/chat", "/login"];

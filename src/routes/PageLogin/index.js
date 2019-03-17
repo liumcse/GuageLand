@@ -4,6 +4,11 @@ import Title from "@common/assets/icons/Guageland_title.png";
 import GoodImg from "@components/GoodImg";
 import logoIcon from "@common/assets/icons/logo.png";
 
+import Google from "@common/assets/Google.png";
+import facebook from "@common/assets/facebook.png";
+
+
+
 const PageLogin = () => (
   <div className="container">
     <div className="logo">
@@ -11,8 +16,8 @@ const PageLogin = () => (
     </div>
     <img className="title-img" src={Title} />
     <div className="login_page">
-      <input type="email" id="Login" placeholder="Login"></input>
-      <input type="password" id="Password" placeholder="Password"></input>
+      <input type="email" id="Login" placeholder="Login" />
+      <input type="password" id="Password" placeholder="Password" />
     </div>
     <div className="Btn_wrapper">
       <Link
@@ -21,14 +26,21 @@ const PageLogin = () => (
         <div className="btn">LOGIN</div>
       </Link>
     </div>
+    <div className="sub-title">
+      <span className="sub_title">Or Login With</span>
+    </div>
+    <div className="brand-icon">
+      <GoodImg width="2rem" style={{ padding: "0.5rem" }} src={Google} />
+      <GoodImg width="2rem" style={{ padding: "0.5rem" }} src={facebook} />
+    </div>
     <style jsx>
       {`
-        .title-img{
+        .title-img {
           width: 20rem;
-          margin-top: 2rem;
+          margin-top: -1.5rem;
           position: absolute;
         }
-        
+
         .container {
           display: flex;
           flex-direction: column;
@@ -41,7 +53,7 @@ const PageLogin = () => (
           border-radius: 8rem;
           margin-top: 4rem;
         }
-        #Password{
+        #Password {
           padding: 0.5rem;
           margin-top: 1rem;
           height: 1rem;
@@ -54,7 +66,7 @@ const PageLogin = () => (
           margin-top: 6rem;
           height: 5rem;
         }
-        .btn{
+        .btn {
           margin-top: 3rem;
           background-color: white;
           color: black;
@@ -62,9 +74,19 @@ const PageLogin = () => (
           width: 5rem;
           padding: 0.5rem;
         }
+        .sub-title {
+          margin-top: 1rem;
+        }
+        .sub_title {
+          color: white;
+          font-size: 10px;
+        }
+        .brand-icon {
+          margin-top: 0.5rem;
+        }
       `}
     </style>
-  </div >
+  </div>
 );
 
 export default PageLogin;
