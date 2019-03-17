@@ -18,6 +18,7 @@ import PageLanguage from "./routes/PageLanguage";
 import PageTasks from "@routes/PageTasks";
 import PageQuizDone from "@routes/PageQuizDone";
 import PageOrganization from "@routes/PageOrganization";
+import PageHouseCarousel from "@routes/PageHouseCarousel";
 
 // PWA
 import * as serviceWorker from "./public/serviceWorker";
@@ -45,6 +46,7 @@ const App = () => (
         <Route exact path={ROUTES.ROUTE_QUIZ} component={PageQuiz} />
         <Route exact path={ROUTES.ROUTE_LANGUAGE} component={PageLanguage} />
         <Route exact path={ROUTES.ROUTE_QUIZ_DONE} component={PageQuizDone} />
+        <Route exact path={ROUTES.ROUTE_HOUSECAROUSEL} component={PageHouseCarousel} />
         <Route path={ROUTES.ROUTE_HOME} component={PageHome} />
         {/* Add more routes here */}
       </Switch>
