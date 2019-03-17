@@ -9,4 +9,5 @@ export const ROUTE_ORGANIZATION = "/profile/organization";
 export const ROUTE_FINDINGS = "/findings";
 export const ROUTE_ARTICLE = "/article/:slug";
 export const ROUTE_QUIZ = "/quiz";
+export const ROUTE_QUIZ_DONE = "/quiz/done";
 export const ROUTE_LANGUAGE = "/language/:slug";

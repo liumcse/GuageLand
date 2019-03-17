@@ -1,5 +1,6 @@
 import React from "react";
 import GoodImg from "@components/GoodImg";
+import { Link } from "react-router-dom";
 
 import rewardIcon from "@common/assets/icons/reward_points_icon.png";
 import taskIcon from "@common/assets/icons/task_icon.png";
@@ -55,18 +56,20 @@ const PageTasks = () => {
             <div>10</div>
           </div>
         </div>
-        <div className="task">
-          <GoodImg width="3rem" src={quizIcon} />
-          <div>Quiz</div>
-          <div className="icon-group">
-            <GoodImg
-              width="2rem"
-              src={rewardIcon}
-              style={{ marginRight: "0.5rem" }}
-            />
-            <div>15</div>
+        <Link to="/quiz">
+          <div className="task">
+            <GoodImg width="3rem" src={quizIcon} />
+            <div>Quiz</div>
+            <div className="icon-group">
+              <GoodImg
+                width="2rem"
+                src={rewardIcon}
+                style={{ marginRight: "0.5rem" }}
+              />
+              <div>15</div>
+            </div>
           </div>
-        </div>
+        </Link>
         <div className="task">
           <GoodImg width="3rem" src={paperPlaneIcon} />
           <div>Paper plane Wandering</div>

@@ -1,11 +1,10 @@
-import React from 'react';
-import Question from '@components/Question';
-import Answers from '@components/Answers';
-import QuestionCounter from '@components/QuestionCounter';
+import React from "react";
+import Question from "@components/Question";
+import Answers from "@components/Answers";
+import QuestionCounter from "@components/QuestionCounter";
 
 class Quiz extends React.Component {
-
-  renderAnswers = (key) => {
+  renderAnswers = key => {
     console.log(key.content);
     return (
       <Answers
@@ -24,7 +23,10 @@ class Quiz extends React.Component {
     return (
       <div>
         <div key={this.props.questionId}>
-          <QuestionCounter counter={this.props.questionId} total={this.props.questionTotal} />
+          <QuestionCounter
+            counter={this.props.questionId}
+            total={this.props.questionTotal}
+          />
           <Question content={this.props.question} />
           <ul className="answers">
             {this.props.answers.map(this.renderAnswers)}
@@ -38,7 +40,6 @@ class Quiz extends React.Component {
           }
         `}</style>
       </div>
-  
     );
   }
 }
