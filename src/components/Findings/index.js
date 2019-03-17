@@ -11,7 +11,7 @@ const Findings = props => (
       showPlayButton={false}
       showThumbnails={false}
       showNav
-      autoPlay={false}
+      autoPlay
     />
     <style jsx>{`
     
