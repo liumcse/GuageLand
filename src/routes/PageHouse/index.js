@@ -4,32 +4,32 @@ import Fab from '@material-ui/core/Fab';
 import Button from '@material-ui/core/Button';
 import Background from "@common/assets/pic/Land/background.png"
 import Land from "@common/assets/pic/Land/land.png"
-import House7 from "@common/assets/pic/Land/lv3_1.png"
-import House8 from "@common/assets/pic/Land/lv3_2.png"
-import House9 from "@common/assets/pic/Land/lv3_3.png"
-import LvlBoard7 from "@common/assets/pic/Land/level_board/lv3_1_board.png"
-import LvlBoard8 from "@common/assets/pic/Land/level_board/lv3_2_board.png"
-import LvlBoard9 from "@common/assets/pic/Land/level_board/lv3_3_board.png"
+import House6 from "@common/assets/pic/Land/lv3_1.png"
+import House7 from "@common/assets/pic/Land/lv3_2.png"
+import House8 from "@common/assets/pic/Land/lv3_3.png"
+import LvlBoard6 from "@common/assets/pic/Land/level_board/lv3_1_board.png"
+import LvlBoard7 from "@common/assets/pic/Land/level_board/lv3_2_board.png"
+import LvlBoard8 from "@common/assets/pic/Land/level_board/lv3_3_board.png"
 import RewardIcon from "@common/assets/icons/reward_points_icon.png"
 import GoodImg from "@components/GoodImg";
 
 const LEVEL_PIC_MAPPING = {
+  6: LvlBoard6,
   7: LvlBoard7,
-  8: LvlBoard8,
-  9: LvlBoard9
+  8: LvlBoard8
 }
 
 const HOUSE_PIC_MAPPING = {
+  6: House6,
   7: House7,
-  8: House8,
-  9: House9
+  8: House8
 }
 
 class PageHouse extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      level: 7,
+      level: 6,
       reward: 400
     };
     this.houseImg = React.createRef();
