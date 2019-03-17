@@ -32,7 +32,7 @@ library.add(
 );
 
 const NO_TOOLBAR_PATH = ["/chat", "/login"];
-const NO_TOPBAR_PATH = ["/"];
+const NO_TOPBAR_PATH = ["/", "/login"];
 
 
 export default withRouter(props => {
