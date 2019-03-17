@@ -6,6 +6,9 @@ import taskIcon from "@common/assets/icons/task_icon.png";
 import quizIcon from "@common/assets/icons/quiz_icon.png";
 import paperPlaneIcon from "@common/assets/icons/paper_plane.png";
 import dailyAttendanceIcon from "@common/assets/icons/daily_attendance.png";
+import earthIcon from "@common/assets/icons/earth_button.png";
+import chatbotIcon from "@common/assets/icons/chatbot.png";
+import sharingIcon from "@common/assets/icons/sharing_icon.png";
 
 const PageTasks = () => {
   return (
@@ -29,6 +32,30 @@ const PageTasks = () => {
       </div>
       <div className="task-container">
         <div className="task">
+          <GoodImg width="3rem" src={earthIcon} />
+          <div>Explore a new language</div>
+          <div className="icon-group">
+            <GoodImg
+              width="2rem"
+              src={rewardIcon}
+              style={{ marginRight: "0.5rem" }}
+            />
+            <div>10</div>
+          </div>
+        </div>
+        <div className="task">
+          <GoodImg width="3rem" src={chatbotIcon} />
+          <div>Chat with bot</div>
+          <div className="icon-group">
+            <GoodImg
+              width="2rem"
+              src={rewardIcon}
+              style={{ marginRight: "0.5rem" }}
+            />
+            <div>10</div>
+          </div>
+        </div>
+        <div className="task">
           <GoodImg width="3rem" src={quizIcon} />
           <div>Quiz</div>
           <div className="icon-group">
@@ -50,6 +77,30 @@ const PageTasks = () => {
               style={{ marginRight: "0.5rem" }}
             />
             <div>30</div>
+          </div>
+        </div>
+        <div className="task">
+          <GoodImg width="3rem" src={sharingIcon} />
+          <div>Share your language</div>
+          <div className="icon-group">
+            <GoodImg
+              width="2rem"
+              src={rewardIcon}
+              style={{ marginRight: "0.5rem" }}
+            />
+            <div>50</div>
+          </div>
+        </div>
+        <div className="task">
+          <GoodImg width="3rem" src={sharingIcon} />
+          <div>Make 2 new friends</div>
+          <div className="icon-group">
+            <GoodImg
+              width="2rem"
+              src={rewardIcon}
+              style={{ marginRight: "0.5rem" }}
+            />
+            <div>99</div>
           </div>
         </div>
       </div>
@@ -79,6 +130,7 @@ const PageTasks = () => {
       <style jsx>{`
         .container {
           position: relative;
+          padding-bottom: 5rem;
           width: 100%;
         }
         .icon {

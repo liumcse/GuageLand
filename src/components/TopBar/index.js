@@ -19,6 +19,7 @@ const TopBar = props => {
           .container {
             width: 100%;
             height: 2rem;
+            z-index: 10000;
             background-color: transparent;
             position: fixed;
             top: 0;
@@ -29,6 +30,7 @@ const TopBar = props => {
 
           .back-icon {
             display: left;
+            z-index: 10000;
             justify-content: space-around;
             width: 100%;
             height: 100%;
