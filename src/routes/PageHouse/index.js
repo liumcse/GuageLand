@@ -1,33 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Fab from "@material-ui/core/Fab";
 import Button from "@material-ui/core/Button";
 import Background from "@common/assets/pic/Land/background.png";
 import Land from "@common/assets/pic/Land/land.png";
-import House3_1 from "@common/assets/pic/Land/lv3_1.png";
-import House3_2 from "@common/assets/pic/Land/lv3_2.png";
-import House3_3 from "@common/assets/pic/Land/lv3_3.png";
-import LvlBoard3_1 from "@common/assets/pic/Land/level_board/lv3_1_board.png";
-import LvlBoard3_2 from "@common/assets/pic/Land/level_board/lv3_2_board.png";
-import LvlBoard3_3 from "@common/assets/pic/Land/level_board/lv3_3_board.png";
+import House6 from "@common/assets/pic/Land/lv3_1.png";
+import House7 from "@common/assets/pic/Land/lv3_2.png";
+import House8 from "@common/assets/pic/Land/lv3_3.png";
+import LvlBoard6 from "@common/assets/pic/Land/level_board/lv3_1_board.png";
+import LvlBoard7 from "@common/assets/pic/Land/level_board/lv3_2_board.png";
+import LvlBoard8 from "@common/assets/pic/Land/level_board/lv3_3_board.png";
 import RewardIcon from "@common/assets/icons/reward_points_icon.png";
 
 const LEVEL_PIC_MAPPING = {
-  1: LvlBoard3_1,
-  2: LvlBoard3_2,
-  3: LvlBoard3_3
+  6: LvlBoard6,
+  7: LvlBoard7,
+  8: LvlBoard8
 };
 
 const HOUSE_PIC_MAPPING = {
-  1: House3_1,
-  2: House3_2,
-  3: House3_3
+  6: House6,
+  7: House7,
+  8: House8
 };
 
 class PageHouse extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      level: 1,
+      level: 6,
       reward: 400
     };
     this.houseImg = React.createRef();
@@ -75,11 +76,13 @@ class PageHouse extends React.Component {
           <img className="land-img apply-slidein" src={Land} />
         </div>
 
-        <img
-          className="lvl-img init apply-jelly"
-          src={LEVEL_PIC_MAPPING[this.state.level]}
-          ref={this.lvlImg}
-        />
+        <Link to={"/housecarousel?level=" + this.state.level}>
+          <img
+            className="lvl-img init apply-jelly"
+            src={LEVEL_PIC_MAPPING[this.state.level]}
+            ref={this.lvlImg}
+          />
+        </Link>
         <style jsx>
           {`
             .container {

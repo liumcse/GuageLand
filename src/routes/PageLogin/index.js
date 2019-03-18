@@ -25,6 +25,7 @@ const PageLogin = () => (
           width: 20rem;
           margin-top: 2rem;
           position: absolute;
+          z-index: -1;
         }
 
         .container {
