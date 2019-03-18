@@ -1,10 +1,10 @@
 import React from "react";
-import ImageGallery from 'react-image-gallery';
-import {images} from "@common/assets/images";
+import ImageGallery from "react-image-gallery";
+import { images } from "@common/assets/images";
 
 const Findings = props => (
   <div>
-    <ImageGallery 
+    <ImageGallery
       items={images}
       showBullets
       showFullscreenButton={false}
@@ -13,9 +13,6 @@ const Findings = props => (
       showNav
       autoPlay
     />
-    <style jsx>{`
-    
-    `}</style>
   </div>
 );
 
