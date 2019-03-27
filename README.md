@@ -2,8 +2,6 @@
 
 This project won 1st place under IBM Cloud Prize at 2019 FOSSASIA UNESCO Hackathon.
 
-Made with ❤️
-
 ## Inspiration
 
 A Land for indigenous languages! Build indigenous languages on your Land and level up your house by clearing everyday tasks!
@@ -13,6 +11,8 @@ Form a worldwide collaboration to save endangered languages by sharing their lan
 ## What it does
 
 Our GuageLand Project is fully open source and connects to FOSSASIA technologies. It applies gamification to tackle challenges related to indigenous languages.
+
+Made with ❤️!
 
 ## Challenges we ran into
 
