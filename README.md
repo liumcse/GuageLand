@@ -23,6 +23,8 @@ We face a number of challenges, for example how to effectively stimulate people 
 - [Demo - YouTube](https://www.youtube.com/watch?v=qRqPeClQiBo)
 - [Live site on Netlify](https://fosshack.netlify.com/)
 
+App optimized for iPhone 6/7/8 only!
+
 ## Contributors
 
 Sort by commits.
